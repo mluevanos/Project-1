@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SkyTunes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    // This is our API key
+    var APIKey = "0c4b0756ea6a4474bc365916d73a84b7";
+    var appID = "c814663e";
+  
+    // Here we are building the URL we need to query the database
+    var urlCold = "https://api.edamam.com/search?q=soup&app_id=c814663e&app_key=0c4b0756ea6a4474bc365916d73a84b7";
+    var urlHot = "https://api.edamam.com/search?q=salad&app_id=c814663e&app_key=0c4b0756ea6a4474bc365916d73a84b7";
+    var urlRain = "https://api.edamam.com/search?q=crockpot&app_id=c814663e&app_key=0c4b0756ea6a4474bc365916d73a84b7";
+    var urlSnow = "https://api.edamam.com/search?q=chili&app_id=c814663e&app_key=0c4b0756ea6a4474bc365916d73a84b7";
+    // Here we run our AJAX call
+    $.ajax({
+      url: urlRain,
+      method: "GET"
+    })
+      // We store all of the retrieved data inside of an object called "response"
+      .then(function(response) {
+  
+        // Log the queryURL
+
+        // Log the resulting object
+        console.log(response);
+        
+    });
+</script>
+
+</body>
+</html>
+  
+cold = soup
+rain = crockpot
+hot = salads
+snow = chili

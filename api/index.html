@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SkyTunes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    // This is our API key
+    var APIKey = "4aa84673b53e416b8d8183934192910";
+  
+    // Here we are building the URL we need to query the database
+    var queryURL = "http://api.worldweatheronline.com/premium/v1/weather.ashx?key=4aa84673b53e416b8d8183934192910&q=Los Angeles&format=json&num_of_days=1&extra=localObs,utcDateTime&date=today&includelocation=yes" + APIKey;
+  
+    // Here we run our AJAX call
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    })
+      // We store all of the retrieved data inside of an object called "response"
+      .then(function(response) {
+  
+        // Log the queryURL
+        console.log(queryURL);
+  
+        // Log the resulting object
+        console.log(response);
+      });
+</script>
+
+</body>
+</html>
+  

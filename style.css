@@ -1,15 +1,83 @@
-body {
-    max-width: 1280px;
-    max-height: 670px;
-    background-image: url("");
+#main {
+    background-image:url('assets/clouds_moving.mp4');
+
+    background-image: cover;
 }
 
-.container3 {
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.videos {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;  
+}
+
+#myVideo2 {
     display: none;
-    margin-left: none;
 }
 
-.content {
-    margin-left: 48%;
-    margin-top: 15%;
+#myVideo3 {
+    display: none;
+    min-width: 100%;
+    min-height: 100%;
 }
+
+#myVideo4 {
+    display: none;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#myVideo5 {
+    display: none;
+    min-width: 100%;
+    min-height: 100%; 
+}
+
+#myVideo6 {
+    display: none;
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+.whiteText {
+    color: azure;
+    font-weight: bold;
+}
+
+#main {
+    position: fixed;
+    margin-top: 12%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    position: sticky;
+  }
+
+  
+  
+
+  .container3 {
+      display: none;
+  }
+
+  .food {
+    width: 40%;
+    background: white;
+    margin: auto;
+  }
+
+  .icon-holder {
+      margin-left: 10px;
+  }

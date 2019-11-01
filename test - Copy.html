@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SkyTunes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+</script>
+<div class="top-bar">
+  <div class="top-bar-left">
+  <ul class="menu">
+  <li class="menu-text">SkyTunes</li>
+  </ul>
+  </div>
+  </div>
+
+  <div class = "videos" >
+    <video autoplay muted loop id="myVideo">
+      <source src="assets/LA_Flyover2.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="myVideo2">
+        <source src="assets/Rain_Rain.mp4" type="video/mp4">
+      </video>
+    <video autoplay muted loop id="myVideo3">
+          <source src="assets/waves.mp4" type="video/mp4">
+      </video>
+    <video autoplay muted loop id="myVideo4">
+          <source src="assets/clouds_moving.mp4" type="video/mp4">
+        </video>
+    <video autoplay muted loop id="myVideo5">
+            <source src="assets/snow_falling.mp4" type="video/mp4">
+        </video>
+    <video autoplay muted loop id="myVideo6">
+            <source src="assets/partly_cloudy.mp4" type="video/mp4">
+        </video>
+  </div>
+
+  
+  
+  <div class="callout large primary" id="main">
+  <div class="row column text-center box">
+    <div class = "content">
+      <div class = "container2">
+          <p class="whiteText"><strong>Enter a location:</strong></p>
+          <input type="text" placeholder="City, Zip Code, Lat/Long" class="myLocation"> 
+          <button id="confirm" type="button" class="whiteText"><strong>Submit</strong></button>
+          <br> <br>
+          
+      </div>
+      <div class = "container3">
+              <div class="openWeather whiteText"><strong></strong></div> <br> <br>
+              <div> 
+                <img class="icon-holder">
+              </div>
+              <div class="food"><strong></strong></div> <br> <br>
+      </div>
+  </div>
+  
+  </div>
+  </div>
+
+ 
+  
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+  <script>
+        $(document).foundation();
+      </script>
+ 
+<script src="script.js"></script>
+</body>
+</html>
+  
